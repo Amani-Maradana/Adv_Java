@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Student Management System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <header class="site-header">
+   <div class="brand">Student Management System</div>
+   <nav class="site-nav">
+     <a href="index.html">Home</a>
+     <a href="add-student.html">Add Student</a>
+     <a href="list">View All</a>
+     <a href="search-by-id.html">Search by ID</a>
+     <a href="search-by-course.html">Search by Course</a>
+     <a href="update-marks.html">Update Marks</a>
+     <a href="delete-student.html">Delete</a>
+   </nav>
+ </header>
+ <main class="container">
+   <h1>Welcome</h1>
+   <p>Manage student records backed by MySQL through Servlets and JDBC.</p>
+   <div class="menu-grid">
+     <a class="menu-card" href="add-student.html">
+       <span class="icon">&#10133;</span>
+       <h3>Add Student</h3>
+       <p>Register a new student record.</p>
+     </a>
+     <a class="menu-card" href="list">
+       <span class="icon">&#128203;</span>
+       <h3>View All Students</h3>
+       <p>List every student in the database.</p>
+     </a>
+     <a class="menu-card" href="search-by-id.html">
+       <span class="icon">&#128269;</span>
+       <h3>Search by ID</h3>
+       <p>Find a single student using their ID.</p>
+     </a>
+     <a class="menu-card" href="search-by-course.html">
+       <span class="icon">&#127891;</span>
+       <h3>Search by Course</h3>
+       <p>List all students in a given course.</p>
+     </a>
+     <a class="menu-card" href="update-marks.html">
+       <span class="icon">&#9999;</span>
+       <h3>Update Marks</h3>
+       <p>Change the marks for an existing student.</p>
+     </a>
+     <a class="menu-card" href="delete-student.html">
+       <span class="icon">&#128465;</span>
+       <h3>Delete Student</h3>
+       <p>Remove a student record permanently.</p>
+     </a>
+   </div>
+ </main>
+ <footer class="site-footer">&copy; Student Management System &mdash; Servlets + JDBC</footer>
+</body>
+</html>

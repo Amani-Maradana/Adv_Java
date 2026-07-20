@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Student | Student Management System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <header class="site-header">
+   <div class="brand">Student Management System</div>
+   <nav class="site-nav">
+     <a href="index.html">Home</a>
+     <a href="add-student.html">Add Student</a>
+     <a href="list">View All</a>
+     <a href="search-by-id.html">Search by ID</a>
+     <a href="search-by-course.html">Search by Course</a>
+     <a href="update-marks.html">Update Marks</a>
+     <a href="delete-student.html">Delete</a>
+   </nav>
+ </header>
+ <main class="container">
+   <h1>Delete Student</h1>
+   <form class="form-card" action="/delete" method="post" onsubmit="return confirm('Are you sure you want to delete this student? This cannot be undone.');">
+     <div class="form-group">
+       <label for="id">Student ID</label>
+       <input type="number" id="id" name="id" min="1" placeholder="e.g. 1" required>
+     </div>
+     <button type="submit" class="btn btn-danger">Delete Student</button>
+   </form>
+ </main>
+ <footer class="site-footer">&copy; Student Management System &mdash; Servlets + JDBC</footer>
+</body>
+</html>
